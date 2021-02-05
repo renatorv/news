@@ -32,7 +32,8 @@ class HttpServiceImpl implements HttpService {
         },
         onResponse: (response) {
           print(
-              '${response.statusCode} ${response.statusMessage} ${response.data}');
+            '${response.statusCode} ${response.statusMessage} ${response.data}',
+          );
         },
       ),
     );
@@ -48,5 +49,6 @@ class HttpServiceImpl implements HttpService {
         },
       ),
     );
+    initializeInterceptors();
   }
 }
